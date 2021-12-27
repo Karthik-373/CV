@@ -1,0 +1,553 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(#636162, #b6b6b6);
+  height: 122vh;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+.main{
+  /* margin: 0; */
+  /* padding: 0; */
+  background-color: #eee;
+  height: 100%;
+  width: 750px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 60%;
+}
+
+
+.top{
+  /* margin: 0; */
+  /* padding: 0; */
+  background-color: royalblue;
+  background-image: url('images/bk.jpg');
+  width: 750px;
+  height: 220px;
+  /* float: top; */
+}
+
+
+.profileimg{
+  /* margin: 0; */
+  margin-left: 500px !important;
+  margin-top: 80px !important;
+  /* padding: 0; */
+  height: 180px;
+  width: 180px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  border: 3px solid white;
+  box-shadow: 0px 4px 12px 5px royalblue;  
+}
+
+a:link{
+  color: royalblue;
+}
+
+a:active{
+  color: royalblue;
+}
+a:visited{
+  color: royalblue;
+}
+
+.p1 a:hover{
+  zoom: 150%;
+}
+
+/* *********************************************************************************** */
+hr{
+width: 650px !important;
+}
+.content1{
+display: none;
+}
+.content1-main{
+width: 150px;
+}
+
+
+.content1-main:hover{
+cursor: pointer;
+width: auto;
+}
+
+.content1-main:hover .content1{
+display: block !important;
+}
+
+
+
+.content2{
+display: none;
+}
+.content2-main{
+width: 350px;
+}
+
+
+.content2-main:hover{
+cursor: pointer;
+width: auto;
+}
+
+.content2-main:hover .content2{
+display: block !important;
+}
+
+
+
+.content3{
+display: none;
+}
+.content3-main{
+width: 350px;
+}
+
+
+.content3-main:hover{
+cursor: pointer;
+width: auto;
+}
+
+.content3-main:hover .content3{
+display: block !important;
+}
+
+
+/* ************************************************************************************* */
+
+.content4{
+display: none;
+}
+.content4-main{
+width: 350px;
+}
+
+
+.content4-main:hover{
+cursor: pointer;
+width: auto;
+}
+
+.content4-main:hover .content4{
+justify-content: center;
+margin: auto !important;
+display: flex !important;
+flex-wrap: wrap;
+align-content: center;
+}
+
+
+
+/* *********************************************************************************** */
+
+.content3-main .content3 a:link{
+text-decoration: none;
+color: black;
+}
+.content3-main .content3 a:active{
+text-decoration: none;
+color: black;
+}
+.content3-main .content3 a:visited{
+color: black;
+text-decoration: none;
+}
+
+
+
+/* *********************************************************************************** */
+
+
+
+
+
+
+
+
+
+.profileimg img{
+  /* margin: 0;
+  padding: 0; */
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+}
+
+nav{
+  position: fixed;
+  margin-top: 171px !important;
+  margin-left: 0;
+  /* justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: white; */
+}
+
+
+.tabs{
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+header nav .tabs .tab{
+  display: block;
+  padding: 15px 35px;
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+  cursor: pointer;
+}
+
+header nav .tabs .tab.is-active{
+  font-weight: 750px;
+  background-color: orange;
+  
+}
+
+header nav .tabs .tab:hover{
+  font-weight: 750px;
+  width: auto;
+  height: auto;
+  background-color: orange !important;
+  
+}
+
+header nav .tabs .tab.is-active a[Data-Switcher]{
+  font-weight: 750px;
+  background-color: orange;
+}
+
+
+
+.pages{
+  margin-top: 100px;
+  padding: 50px 50px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+  font-weight: 100 !important;
+}
+
+.pages .page{
+  display: none;
+}
+
+main .pages .page.is-active{
+  display: block;
+}
+
+
+
+.about-head{
+  margin: 0;
+  background-color: #4d4d4d;
+  padding: 10px 1px !important;
+  color: white;
+  text-align: left;
+  padding-left: 10px;
+  margin-right: -15px;
+}
+
+.about-p1{
+  font-size: 16px !important;
+  padding-right: 10px !important;
+  vertical-align: sub;
+  padding-left: 2px !important;
+}
+
+
+.about-skill{
+  width: 90%;
+  background-color: #4d4d4d;
+  max-width: 0px 10px;
+  
+}
+
+
+.about-skill-child{
+  text-align: right;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: white;
+  
+}
+
+
+.about-skill-child.htmlcss{
+  width: 97%;
+  background-color: blue;
+ 
+}
+.about-skill-child.javascript{
+  width: 60%;
+  background-color: blue;
+}
+.about-skill-child.flutterdart{
+  width: 40%;
+  background-color: blue;
+}
+.about-skill-child.cpp{
+  width: 90%;
+  background-color: blue;
+}
+.about-skill-child.python{
+  width: 95%;
+  background-color: blue;
+}
+.about-skill-child.django{
+  width: 70%;
+  background-color: blue;
+}
+.about-skill-child.sql{
+  width: 97%;
+  background-color: blue;
+}
+.about-skill-child.bash{
+  width: 60%;
+  background-color: blue;
+}
+
+.pages .page .hobby-box1{
+  padding: 0 !important;
+  width:auto;
+  height: auto;
+  background-color: #eee;
+  border: black;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+/* ************************************************************************************************ */
+.keyboard {
+  opacity: 1;
+  padding-top: 10px;
+  /* margin-left: 50px; */
+  padding-left: 10px;
+  display: block;
+  padding-bottom: 0 !important;
+  width: 200px !important;
+  height: 120px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  padding-right: 0 !important
+  
+}
+
+.middle-keyboard {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 58%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hobby-keyboard:hover .keyboard {
+  opacity: 0.3;
+}
+
+.hobby-keyboard:hover .middle-keyboard {
+  opacity: 1;
+}
+/* ****************************************************************************************************** */
+
+.football {
+  opacity: 1;
+  padding-top: 0 !important;
+  padding-bottom: 10px;
+  /* margin-left: 50px;     */
+  padding-left: 10px;
+  display: block;
+  width: 200px !important;
+  height: 120px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle-football {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 72%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hobby-football:hover .football {
+  opacity: 0.3;
+}
+
+.hobby-football:hover .middle-football {
+  opacity: 1;
+}
+
+
+/* ****************************************************************************************************** */
+
+.coding {
+  opacity: 1;
+  padding-top: 10px !important;
+  padding-left: 0 !important;
+  display: block;
+  width: 200px;
+  height: 120px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: fixed;
+  left: 265px;
+  top: 370px;
+}
+
+.middle-coding {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 58%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hobby-coding:hover .coding {
+  opacity: 0.3;
+}
+
+.hobby-coding:hover .middle-coding {
+  opacity: 1;
+}
+
+/* *********************************************************************************************************** */
+.gaming {
+  opacity: 1;
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  padding-bottom: 10px;
+  display: block;
+  width: 200px;
+  height: 120px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: fixed;
+  left: 265px;
+  top: 490px;
+}
+
+.middle-gaming {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 72%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hobby-gaming:hover .gaming {
+  opacity: 0.3;
+}
+
+.hobby-gaming:hover .middle-gaming {
+  opacity: 1;
+}
+
+/* *********************************************************************************************************** */
+.photoshop {
+  opacity: 1;
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  display: block;
+  width: 200px;
+  height: 120px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: fixed;
+  left: 480px;
+  top: 490px;
+  padding-bottom: 10px;
+}
+
+.middle-photoshop {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 72%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hobby-photoshop:hover .photoshop {
+  opacity: 0.3;
+}
+
+.hobby-photoshop:hover .middle-photoshop {
+  opacity: 1;
+}
+/* *********************************************************************************************************** */
+.cricket {
+  opacity: 1;
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  display: block;
+  width: 200px;
+  height: 120px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: fixed;
+  left: 480px;
+  top: 380px;
+  padding-bottom: 10px;
+}
+
+.middle-cricket {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 58%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hobby-cricket:hover .cricket {
+  opacity: 0.3;
+}
+
+.hobby-cricket:hover .middle-cricket {
+  opacity: 1;
+}
+
+ /* ****************************************************************************************************** */
